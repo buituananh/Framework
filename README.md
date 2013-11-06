@@ -1,6 +1,0 @@
-Framework
-=========
-
-PHP framework
-
-
