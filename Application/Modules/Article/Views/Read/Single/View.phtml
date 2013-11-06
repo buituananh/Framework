@@ -1,0 +1,44 @@
+<?php
+$this->RenderCss('/Sources/Article/Css/SingleRead');
+?>
+<?php $Article = $this->ViewBag['Article']?>
+<div class="Article">
+    <div class="Menu">
+        <img src="/Sources/Article/Img/XO.png">
+        <div class="Group">
+            <div class="Title">Navigation pane</div>
+        </div>
+        <div class="Group">
+            <div class="Title">Comments</div>
+        </div>         
+        <div class="Group">              
+            <div class="Title">File</div>
+        </div>   
+        <div class="Group">
+            <div class="Title">History</div>
+        </div>      
+        <div class="Group">
+            <div class="Title">Information</div>
+        </div>         
+    </div>
+    <div class="Content">
+        <div class="TopArticle">
+            <div class="ArticleName">
+                <?php echo $Article['Name']?>
+            </div>
+            <div class="ArticleId">
+                #<?php echo $Article['Id']?>
+            </div>            
+        </div>
+        <div class="ArticleContent">
+            <div class="Properties">
+                <div class="Cover">
+                    <img src="<?php echo $Article['CoverLink']?>" />
+                </div>  
+            </div>            
+            <?php echo nl2br($Article['Contents'])?>
+        </div>
+    </div>
+</div>
+<?php
+$this->RenderJs('/Sources/Article/Js/SingleRead');

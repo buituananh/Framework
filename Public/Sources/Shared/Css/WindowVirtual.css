@@ -1,0 +1,69 @@
+﻿div.Screen {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;    
+    background: rgba(128, 128, 128, 0.73);
+    z-index: 10000;
+}
+
+div.WindowContainer {    
+    min-height: 400px;
+    min-width: 500px;
+    max-height: 400px;
+    max-width: 500px;
+    margin: 50px auto auto auto;    
+}
+
+div.WindowController {    
+    min-height: 20px;
+    min-width: 20px;    
+    border-top: 1px solid #888;
+    background: #EBEBEB;
+    float: right;
+    clear: both;
+}
+    div.WindowController div.WindowControllerE {        
+        min-height: 20px;
+        min-width: 30px;
+        max-height: 20px;
+        max-width: 30px;
+        margin: auto;
+        background: #EBEBEB;    
+        border-left: 1px solid #888;  
+        border-right: 1px solid #888;
+    }
+        div.WindowController div.WindowControllerE:hover {
+            background: #C9C9C9;
+        }
+    div.WindowController div.WindowControllerE img {        
+        min-height: 10px;
+        min-width: 10px;
+        max-height: 10px;
+        max-width: 10px;
+        padding: 5px 10px 5px 10px;
+        float: left;     
+    }
+    
+div.WindowContent {    
+    clear:both;
+    min-height: 370px;
+    min-width: 400px;    
+    margin: auto;
+    background: #EBEBEB;
+    border: 1px solid #888;
+}
+
+    div.WindowContent div.WindowRespond {
+        min-height: 50px;
+        max-height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        margin: 100px auto auto auto;    
+    }
+        div.WindowContent div.WindowRespond img {
+            min-height: 50px;
+            max-height: 50px;
+            min-width: 50px;
+            max-width: 50px;
+            float: left;        
+        }

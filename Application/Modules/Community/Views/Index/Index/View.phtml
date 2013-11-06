@@ -1,0 +1,119 @@
+<?php    
+    $this->RenderCss('/Sources/Community/Css/Center');    
+    $this->RenderCss('/Sources/Shared/Css/WindowVirtual');
+?>
+<div class="Header">
+    <div class="Left">
+        <img src="/Sources/Community/Img/Mythbusters.jpg" />
+    </div>
+    <div class="Right">
+        <div class="DirectorContainer">
+            <button class="Service" id="Home">Home</button>
+            <button class="Service" id="Login">Login</button>
+            <button class="Service" id="AddUser">Create account</button>
+            <button class="Service" id="Personal">Personal</button>
+            <button class="Service" id="Logout">Logout</button>
+            <div class="UserContainer" id="UserContainer">
+                <div class="Avatar">
+                    <img id="Avatar"/>
+                </div>
+                <div class="UserName" id="UserName">
+                </div>
+            </div>
+        </div>
+        <div class="SearchContainer">
+            <div class="InputContainer">
+                <div class="InputIcon">
+                    <img src="/Sources/Community/Img/Search.png" />
+                </div>  
+                <div class="Input">
+                    <input type="text" placeholder="What's your problem"/>
+                </div>                                                          
+            </div>                
+        </div>
+    </div>
+</div>
+<div class="Content">
+    <table class="Communities">
+        <tr>
+            <th>
+                Icon
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Last active
+            </th>
+            <th>
+                Type
+            </th>  
+            <th>
+                Number member
+            </th>         
+        </tr>
+        <?php foreach ($this->Data['Communitys'] as $Community) {?>
+        <tr class="Community">
+            <td class="Cover">
+                <img src="/Sources/Community/Img/Cover/<?php echo $Community['Id']?>.png">
+            </td>
+            <td class="Name">
+                <?php echo $Community['Name']?>
+            </td>
+            <td class="LastActive">
+                <div><?php echo $Community['LastActive']?></div>
+            </td>            
+            <td class="Type">
+                <?php echo $Community['TypeId']?>
+            </td>
+            <td class="NumberMember">
+                <?php echo $Community['NumberMember']?>
+            </td>        
+        </tr>
+        <?php }?>        
+    </table>
+</div>
+<div class="Footer">
+    <div class="Adjust">
+        <div class="LinkList">
+            <img src="../../Sources/Shared/Img/LogoBw.png" >
+            <a href="/">NOILOAN HOME</a>
+            <div class="LinkListWraper">
+                <a href="/">What is Noiloan.net</a>
+                <a href="/">Server info</a>
+                <a href="/">Finance</a>
+            </div>
+        </div>
+        <div class="LinkList">
+            <img src="../../Sources/Shared/Img/Product.png" >
+            <a href="/">PRODUCTS</a>
+            <div class="LinkListWraper">
+                <a href="/">GHTL</a>
+                <a href="/">NL</a>
+                <a href="/">DT</a>
+            </div>
+        </div>
+        <div class="LinkList">
+            <img src="../../Sources/Shared/Img/Support.png" >
+            <a href="/">SUPPORT</a>
+            <div class="LinkListWraper">
+                <a href="/">Account</a>
+                <a href="/">Service</a>
+                <a href="/">Security</a>
+            </div>
+        </div>
+        <div class="LinkList">
+            <img src="../../Sources/Shared/Img/CheckBox.png" >
+            <a href="/">DEVELOP</a>
+            <div class="LinkListWraper">
+                <a href="/">Webiste</a>
+                <a href="/">Framework</a>
+                <a href="/">User interface</a>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+$this->RenderJs('/Sources/Community/Js/AccountController');
+$this->RenderJs('/Sources/Community/Js/Center');
+$this->RenderJs('/Sources/Shared/Js/WindowVirtual'); 

@@ -1,0 +1,75 @@
+div.Article
+{
+    margin: auto;
+}
+div.Menu
+{
+    min-width: 12%;
+    max-width: 12%;
+    min-height: 100%;
+    /*border-right: 1px solid #888;*/
+    float: left;
+}
+div.Menu img
+{
+/*    min-height: 100%;
+    max-height: 100%;*/
+    min-width: 100%;
+    max-width: 100%;
+    padding: 4% 0px 0px 0px;
+}
+div.Content
+{
+    width: 85%;
+    float: left;
+    padding: 0px 0px 0px 2%;
+    /*border-left: 1px solid #888;*/
+}
+div.Content div.TopArticle
+{
+    /*font-weight: bold;*/
+    font-size: 1.5em;
+    padding: 3px 0px 3px 0px;
+    font-family: sans-serif;
+}
+div.Content div.TopArticle div.ArticleName
+{
+    float: left;
+}
+div.Content div.TopArticle div.ArticleId
+{
+    float: right;
+    margin: 0px 2% 0px 0px;
+}
+div.Content div.ArticleContent
+{
+    padding: 3px 0px 0px 0px;  
+    clear: both;
+    font-family: sans-serif;
+    font-size: 0.83em;
+    line-height: 1.5em;
+}
+div.Content div.ArticleContent div.Properties 
+{
+    float: right;
+    width: 30%;
+    /*background: red;*/
+    padding: 0px 0px 1% 2%;
+    text-align: center;
+}
+div.Content div.ArticleContent div.Properties div.Cover img
+{
+    max-height: 100%;
+    max-width: 100%;
+    /*float: left;*/
+}
+div.Group
+{
+    min-height: 100px;
+}
+div.Group div.Title
+{
+    background: #C9C9C9;
+    text-align: center;
+    padding: 3px;
+}

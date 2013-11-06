@@ -1,0 +1,48 @@
+﻿body
+{      
+    background: #EBEBEB;
+    margin: auto;    
+    color: #333;
+    font-family: Calibri;
+    cursor: default;
+}
+    body a {
+        color: #333;
+        text-decoration: none;
+        cursor: default;        
+    }
+div.DirectorContainer
+{
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #888;
+}
+div.MenuContainer {
+    float: left;    
+}
+    div.MenuContainer:hover {
+        background: #C9C9C9;
+    }
+    div.MenuContainer:hover div.OptionContainer{
+        display: block;
+    }
+    div.MenuContainer div.Title {
+        padding: 0px 6px 0px 6px;
+        font-size: 1.2em;
+    }
+    div.MenuContainer div.OptionContainer {
+        position: absolute;
+        min-width: 200px;
+        max-width: 200px;
+        word-wrap: break-word;
+        display: none;
+        background: #EBEBEB;
+        border: 1px solid #888;
+    }
+        div.MenuContainer div.OptionContainer a.Option {
+            display: block;
+            padding: 3px 6px 3px 6px;
+        }
+            div.MenuContainer div.OptionContainer a.Option:hover {
+                background: #C9C9C9;
+            }

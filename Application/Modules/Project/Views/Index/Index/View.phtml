@@ -1,0 +1,53 @@
+<?php
+$this->RenderCss('/Sources/Project/Css/Index');
+?>
+<div class="DirectorContainer">
+    <div class="HeadLeft">
+        <div class="SupportActionContainer">
+            <button class="SupportAction">Map</button>
+            <button class="SupportAction">Create</button>
+            <button class="SupportAction">Your project</button>
+            <button class="SupportAction">Your follow</button>
+            <button class="SupportAction">Manual</button>
+            <button class="SupportAction">Main</button>
+            <button class="SupportAction">Home</button>
+        </div>        
+    </div>
+    <div class="HeadRight">
+        <div class="SearchContainer">
+            <div class="InputContainer">
+                <div class="InputIcon">
+                    <img src="/Sources/Community/Img/Search.png" />
+                </div>  
+                <div class="Input">
+                    <input type="text" placeholder="What do you want project"/>
+                </div>                                                          
+            </div>          
+        </div>        
+    </div>
+</div>
+<div class="Active">
+    <span>Current your active: </span>Main
+</div>
+<div class="Wraper">
+    <?php foreach ($this->Data['Best'] as $Name => $Projects) {?>
+    <div class="ProjectTree">
+        <div class="StateName">
+            <?php echo $Name?>
+        </div>        
+        <?php foreach ($Projects as $Project) {?>
+        <div class="ProjectContainer">
+            <div class="LeftContent">
+                <img src="/Sources/Project/Img/Cover/<?php echo $Project['Id']?>.png">
+            </div>
+            <div class="RightContent">
+                <div class="ProjectName"><?php echo $Project['Name']?></div>
+                <div class="ProjectSummary"><?php echo $Project['Summary']?></div>                
+            </div>            
+        </div> 
+        <?php }?>         
+    </div>
+    <?php }?>
+</div>
+<?php
+$this->RenderCss('/Sources/Project/Css/Index');

@@ -1,0 +1,29 @@
+table.Standard
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    text-align: left;
+    border-collapse: collapse;
+    cursor: default;
+}
+table.Standard th
+{
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #888;
+    color: #EEE;
+}
+table.Standard td
+{
+    padding: 8px;
+    background: #EBEBEB; 
+    border-bottom: 1px solid #888;
+    color: #333;
+}
+table.Standard tr:hover td
+{
+    background: #C9C9C9;
+    color: #333;
+}
+

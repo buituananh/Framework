@@ -1,0 +1,109 @@
+<?php 
+$this->RenderCss('/Sources/User/Css/Control');
+$this->RenderJs('/Framework/JavaScript/Hash/Sha256');
+$this->RenderJs('/Framework/JavaScript/Encryption/Rsa');
+$this->RenderJs('/Framework/JavaScript/Cookie');
+?>
+
+<div class="Panel">
+    <div  class="StackContainer" id="AccountContainer">
+        <div class="AvatarContainer">
+            <img src="/Framework/Icon/Standard/Shield.png" id="Avatar">
+        </div>
+    </div>
+    <div  class="StackContainer" id="UserNameContainer">
+        <div class="AccountContainer" id="UserName">
+            
+        </div>
+    </div>
+    <div  class="StackContainer" id="UserContainer">
+        <div class="InputContainer">
+            <div class="InpuIcon">
+                <img src="/Framework/Icon/Standard/User.png" >
+            </div>
+            <div class="Input">
+                <input id="User" type="text" value="noiloan">
+            </div>            
+        </div>
+    </div>
+    <div  class="StackContainer" id="PasswordContainer">
+        <div class="InputContainer">
+            <div class="InpuIcon">
+                <img src="/Framework/Icon/Standard/Key.png" >
+            </div>
+            <div class="Input">
+                <input id="Password" type="password" value="123456"> 
+            </div>            
+        </div>      
+    </div>
+    <div  class="StackContainer" id="EmailContainer">
+        <div class="InputContainer">
+            <div class="InpuIcon">
+                <img src="/Framework/Icon/Standard/Email.png" >
+            </div>
+            <div class="Input">
+                <input id="Email" type="text">
+            </div>            
+        </div>        
+    </div>    
+    <div  class="StackContainer" id="CaptchaContainer">
+        <div class="InputContainer">
+            <div class="InpuIcon">
+                <img src="/Framework/Icon/Standard/Question.png" >
+            </div>
+            <div class="Input">
+                <input id="Captcha" type="text">
+            </div>            
+        </div>         
+    </div>   
+    <div  class="StackContainer" id="CaptchaImgContainer">
+        <div class="CaptchaImg">
+            <img id="CaptchaImg">
+        </div>
+    </div>      
+    <div  class="StackContainer">
+        <table class="Menu">
+            <tr>                
+                <td id="GetPassword">
+                    <img src="/Framework/Icon/Standard/Exclamation.png">
+                </td>                
+                <td id="Login">
+                    <img src="/Framework/Icon/Standard/UpPlay.png">
+                </td>
+                <td id="ForgotPassword">
+                    <img src="/Framework/Icon/Standard/Massage.png">
+                </td>                
+                <td id="Registry">
+                    <img src="/Framework/Icon/Standard/Pen.png">
+                </td>                  
+                <td id="LoginUi">
+                    <img src="/Framework/Icon/Standard/UpPlay.png">
+                </td>    
+                <td id="Setting">
+                    <img src="/Framework/Icon/Standard/Wrench.png">
+                </td>                 
+                <td id="Logout">
+                    <img src="/Framework/Icon/Standard/Delete.png">
+                </td>   
+                <td id="RegistryUi">
+                    <img src="/Framework/Icon/Standard/Pen.png">
+                </td>   
+                <td id="Home">
+                    <img src="/Framework/Icon/Standard/Home.png">
+                </td>                 
+            </tr>
+        </table>
+    </div>       
+    <div  class="StackContainer" id="ProcessingContainer">
+        <div class="Processing">
+            <ul id="Processing">
+                
+            </ul>
+        </div>
+    </div>  
+    <div  class="StackContainer">
+        
+    </div>       
+</div>
+<?php
+$this->RenderJs('/Sources/User/Js/Control');

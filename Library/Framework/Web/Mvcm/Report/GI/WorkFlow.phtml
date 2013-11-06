@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<link rel='stylesheet' type='text/css' href='/Framework/Css/Standard.css' >
+<link rel='stylesheet' type='text/css' href='/Framework/Css/Report.css' >
+<link rel='stylesheet' type='text/css' href='/Framework/Css/TableStandard.css' >
+<script src='/Framework/JQuery/2-0-0-min.js'></script>
+
+<div class="ReportContainer">
+    <div class="TitleReport">Application report for View action</div>
+    <div class="Wraper">
+        <div class="SummaryContainer">
+            <img src="/Framework/Icon/Default/Server001.png">
+            <div class="Title">Server</div>
+        </div>  
+        <div class="ExpandContainer">
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Linux001.png">
+                    <div class="Title">Operating system</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo 'Basic'?></div>
+                        <div class="Value"><?php echo php_uname()?></div>                                        
+                    </div>                      
+                </div>                
+            </div>             
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Apache001.png">
+                    <div class="Title">Server software</div>
+                </div>  
+                <div class="ExpandContainer">
+                     <div class="DetailContainer">
+                         <div class="Key">HTTP_HOST</div>
+                         <div class="Value"><?php echo $_SERVER['HTTP_HOST']?></div>                                        
+                     </div>    
+                     <div class="DetailContainer">
+                         <div class="Key">HTTP_CONNECTION</div>
+                         <div class="Value"><?php echo $_SERVER['HTTP_CONNECTION']?></div>                                        
+                     </div>    
+                     <div class="DetailContainer">
+                         <div class="Key">HTTP_ACCEPT</div>
+                         <div class="Value"><?php echo $_SERVER['HTTP_ACCEPT']?></div>                                        
+                     </div>  
+                     <div class="DetailContainer">
+                         <div class="Key">HTTP_ACCEPT_ENCODING</div>
+                         <div class="Value"><?php echo $_SERVER['HTTP_ACCEPT_ENCODING']?></div>                                        
+                     </div>  
+                     <div class="DetailContainer">
+                         <div class="Key">HTTP_ACCEPT_LANGUAGE</div>
+                         <div class="Value"><?php echo $_SERVER['HTTP_ACCEPT_LANGUAGE']?></div>                                        
+                     </div>  
+                     <div class="DetailContainer">
+                         <div class="Key">SERVER_SOFTWARE</div>
+                         <div class="Value"><?php echo $_SERVER['SERVER_SOFTWARE']?></div>                                        
+                     </div>     
+                     <div class="DetailContainer">
+                         <div class="Key">GATEWAY_INTERFACE</div>
+                         <div class="Value"><?php echo $_SERVER['GATEWAY_INTERFACE']?></div>                                        
+                     </div> 
+                     <div class="DetailContainer">
+                         <div class="Key">SERVER_PROTOCOL</div>
+                         <div class="Value"><?php echo $_SERVER['SERVER_PROTOCOL']?></div>                                        
+                     </div>                                                                                                                      
+                </div>       
+            </div>             
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/PHP001.png">
+                    <div class="Title">Server language: PHP</div>
+                </div>  
+                <div class="ExpandContainer">
+                     <div class="DetailContainer">
+                         <div class="Key">Version</div>
+                         <div class="Value"><?php echo phpversion()?></div>                                        
+                     </div>  
+                     <div class="DetailContainer">
+                         <div class="Key">Initial file</div>
+                         <div class="Value"><?php echo php_ini_loaded_file()?></div>                                        
+                     </div>                     
+                     <div class="DetailContainer">
+                         <div class="Key">Framework temp directory</div>
+                         <div class="Value"><?php echo sys_get_temp_dir()?></div>                                        
+                     </div>   
+                     <div class="DetailContainer">
+                         <div class="Key">Zend engine version</div>
+                         <div class="Value"><?php echo zend_version()?></div>                                        
+                     </div> 
+                     <div class="DetailContainer">
+                         <div class="Key">Current user</div>
+                         <div class="Value"><?php echo get_current_user()?></div>                                        
+                     </div>     
+                     <div class="DetailContainer">
+                         <div class="Key">Include path</div>
+                         <div class="Value"><?php echo get_include_path()?></div>                                        
+                     </div> 
+                     <div class="DetailContainer">
+                         <div class="Key">My id</div>
+                         <div class="Value"><?php echo getmygid ()?></div>                                        
+                     </div>   
+                     <div class="DetailContainer">
+                         <div class="Key">My inode</div>
+                         <div class="Value"><?php echo getmyinode()?></div>                                        
+                     </div>     
+                     <div class="DetailContainer">
+                         <div class="Key">My PID</div>
+                         <div class="Value"><?php echo getmypid()?></div>                                        
+                     </div>   
+                     <div class="DetailContainer">
+                         <div class="Key">My UID</div>
+                         <div class="Value"><?php echo getmyuid()?></div>                                        
+                     </div>                                  
+                    <div class="Wraper">
+                        <div class="SummaryContainer">
+                            <img src="/Framework/Icon/Standard/Module.png">
+                            <div class="Title">Loaded extensions</div>
+                        </div>  
+                        <div class="ExpandContainer">
+                            <?php foreach (get_loaded_extensions() as $Key => $Info) {?>
+                                 <div class="DetailContainer">
+                                     <div class="Key"><?php echo $Key?></div>
+                                     <div class="Value"><?php echo $Info?></div>                                        
+                                 </div> 
+                             <?php }?> 
+                        </div>                
+                    </div>                 
+                </div>
+            </div>  
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Toxic.png">
+                    <div class="Title">Framework</div>
+                </div>  
+                <div class="ExpandContainer">
+                     <div class="DetailContainer">
+                         <div class="Key">Version</div>
+                         <div class="Value"><?php echo System\About::GetVersion()->GetString()?></div>                                        
+                     </div>   
+                     <div class="DetailContainer">
+                         <div class="Key">Created</div>
+                         <div class="Value"><?php echo System\About::GetVersion()->Get('DateCreated')?></div>                                        
+                     </div>  
+                     <div class="DetailContainer">
+                         <div class="Key">Modified</div>
+                         <div class="Value"><?php echo System\About::GetVersion()->Get('DateModified')?></div>                                        
+                     </div>                      
+                     <div class="DetailContainer">
+                         <div class="Key">Path</div>
+                         <div class="Value"><?php echo System\About::GetDirPath()?></div>                                        
+                     </div>                      
+                </div>
+            </div>            
+        </div>
+    </div>         
+    <div class="Wraper">
+        <div class="SummaryContainer">
+            <img src="/Framework/Icon/Default/CloudUp001.png">
+            <div class="Title">Request</div>
+        </div>        
+        <div class="ExpandContainer">
+            <div class="DetailContainer">
+                <div class="Key">URI</div>
+                <div class="Value"><?php echo $_SERVER['REQUEST_URI']?></div>                                        
+            </div>   
+            <div class="DetailContainer">
+                <div class="Key">IP</div>
+                <div class="Value"><?php echo $_SERVER['REMOTE_ADDR']?></div>                                        
+            </div>  
+            <div class="DetailContainer">
+                <div class="Key">User agent</div>
+                <div class="Value"><?php echo $_SERVER['HTTP_USER_AGENT']?></div>                                        
+            </div>              
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Standard/Attachment.png">
+                    <div class="Title">Cookie <?php if (empty($_COOKIE)) echo 'Empty'?></div>
+                </div>  
+                <div class="ExpandContainer">
+                <?php if (isset($_COOKIE)) foreach ($_COOKIE as $Post => $Value) {?>
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo $Post?></div>
+                        <div class="Value"><?php echo $Value?></div>                                        
+                    </div> 
+                <?php }?>                    
+                </div>
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Standard/Attachment.png">
+                    <div class="Title">Get <?php if (empty($_GET)) echo 'Empty'?></div>
+                </div>  
+                <div class="ExpandContainer">
+                <?php if (isset($_GET)) foreach ($_GET as $Post => $Value) {?>
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo $Post?></div>
+                        <div class="Value"><?php echo $Value?></div>                                        
+                    </div> 
+                <?php }?>                   
+                </div>
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Standard/Attachment.png">
+                    <div class="Title">Post <?php if (empty($_POST)) echo 'Empty'?></div>
+                </div>  
+                <div class="ExpandContainer">
+                <?php if (isset($_POST)) foreach ($_POST as $Post => $Value) {?>
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo $Post?></div>
+                        <div class="Value"><?php echo $Value?></div>                                        
+                    </div> 
+                <?php }?>                  
+                </div>
+            </div>  
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Standard/Attachment.png">
+                    <div class="Title">Session <?php if (empty($_SESSION)) echo 'Empty'?></div>
+                </div>  
+                <div class="ExpandContainer">
+                <?php if (isset($_SESSION)) foreach ($_SESSION as $Post => $Value) {?>
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo $Post?></div>
+                        <div class="Value"><?php echo $Value?></div>                                        
+                    </div> 
+                <?php }?>                  
+                </div>
+            </div>            
+        </div>
+    </div>   
+    <div class="Wraper">
+        <div class="SummaryContainer">
+            <img src="/Framework/Icon/Default/Cloud002.png">
+            <div class="Title">Process</div>
+        </div>        
+        <div class="ExpandContainer">
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Standard/Link.png">
+                    <div class="Title">Active URI</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <div class="DetailContainer">
+                        <div class="Key">URI</div>
+                        <div class="Value"><?php if (isset($Router)) echo $Router->GetRealPath()?></div>
+                    </div>
+                    <div class="DetailContainer">
+                        <div class="Key">Cache hit</div>
+                        <div class="Value"><?php if ($CacheHit) echo 'Yes'; else echo 'No'?></div>
+                    </div>                    
+                    <div class="DetailContainer">
+                        <div class="Key">Module</div>
+                        <div class="Value"><?php if (isset($Router)) echo $Router->GetModuleName()?></div>
+                    </div>
+                    <div class="DetailContainer">
+                        <div class="Key">Controller</div>
+                        <div class="Value"><?php if (isset($Router)) echo $Router->GetControllerName()?></div>
+                    </div>
+                    <div class="DetailContainer">
+                        <div class="Key">Action</div>
+                        <div class="Value"><?php if (isset($Router)) echo $Router->GetActionName()?></div>
+                    </div>                  
+                </div>
+            </div> 
+            <div class="DetailContainer">
+                <div class="Key">Time process</div>
+                <div class="Value"><?php echo number_format(0, 0, 0, ',')?> ms</div>                
+            </div>             
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/File001.png">
+                    <div class="Title">Loaded files</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <?php foreach (get_included_files() as $Key => $Info) {?>
+                         <div class="DetailContainer">
+                             <div class="Key"><?php echo $Key?></div>
+                             <div class="Value"><?php echo $Info?></div>                                        
+                         </div> 
+                     <?php }?> 
+                </div>                
+            </div>             
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Function001.png">
+                    <div class="Title">Defined Function</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <div class="Wraper">
+                        <div class="SummaryContainer">
+                            <img src="/Framework/Icon/Default/SystemApp001.png">
+                            <div class="Title">Framework</div>
+                        </div>  
+                        <div class="ExpandContainer">
+                            <?php 
+                            $FunctionDefine = get_defined_functions();
+                            foreach (($FunctionDefine['internal']) as $Id => $Function) { ?>     
+                            <div class="DetailContainer">
+                                <div class="Key"><?php echo $Id?></div>
+                                <div class="Value"><?php echo $Function?></div>                
+                            </div>                             
+                            <?php }?>
+                        </div>
+                    </div>   
+                    <div class="Wraper">
+                        <div class="SummaryContainer">
+                            <img src="/Framework/Icon/Default/User001.png">
+                            <div class="Title">User</div>
+                        </div>  
+                        <div class="ExpandContainer">
+                            <?php                             
+                            foreach (($FunctionDefine['user']) as $Id => $Function) { ?>     
+                            <div class="DetailContainer">
+                                <div class="Key"><?php echo $Id?></div>
+                                <div class="Value"><?php echo $Function?></div>                
+                            </div>                             
+                            <?php }?>
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Variable001.png">
+                    <div class="Title">Defined Variable</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <?php                             
+                    foreach ((get_defined_vars()) as $Key => $Variable) { ?>     
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo gettype($Variable);?></div>
+                        <div class="Value">
+                        <?php 
+                            echo $Key;
+                        ?>
+                        </div>                
+                    </div>                             
+                    <?php }?>                    
+                </div>
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Pi001.png">
+                    <div class="Title">Defined Constant</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <?php                             
+                    foreach ((get_defined_constants()) as $Key => $Variable) { ?>     
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo gettype($Variable);?></div>
+                        <div class="Value">
+                        <?php 
+                            echo $Key;
+                        ?>
+                        </div>                
+                    </div>                             
+                    <?php }?>                     
+                </div>
+            </div>    
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Box001.png">
+                    <div class="Title">Defined Class</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <?php                             
+                    foreach ((get_declared_classes()) as $Key => $Variable) { ?>     
+                    <div class="DetailContainer">
+                        <div class="Key"><?php echo $Key;?></div>
+                        <div class="Value">
+                        <?php 
+                            echo $Variable;
+                        ?>
+                        </div>                
+                    </div>                             
+                    <?php }?>                     
+                </div>
+            </div>            
+        </div>
+    </div>    
+    <div class="Wraper">
+        <div class="SummaryContainer">
+            <img src="/Framework/Icon/Default/CloudDown001.png">
+            <div class="Title">Respond</div>
+        </div>        
+        <div class="ExpandContainer">
+            <div class="DetailContainer">
+                <div class="Key">Size</div>
+                <div class="Value"> <?php echo number_format(0, 0, 0, ',')?> bytes</div>                
+            </div>
+            <div class="DetailContainer">
+                <div class="Key">Download time</div>
+                <div class="Value"><?php echo number_format(0, 0, 0, ',')?> ms</div>                
+            </div>            
+        </div>
+    </div>  
+    <div class="Wraper">       
+        <div class="SummaryContainer">
+            <img src="/Framework/Icon/Default/Cloud-Storage.png">
+            <div class="Title">Resource usage</div>
+        </div>
+        <div class="ExpandContainer">
+            <div class="DetailContainer">
+                <div class="Key">CPU</div>
+                <div class="Value">0% - <?php echo number_format(0, 0, 0, ',')?> ms</div>                                
+            </div>
+            <div class="DetailContainer">
+                <div class="Key">RAM</div>
+                <div class="Value">0% - <?php echo number_format(memory_get_usage(), 0, 0, ',')?> bytes</div>                
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Hdd001.png">
+                    <div class="Title">HDD</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <div class="DetailContainer">
+                        <div class="Key">Read</div>
+                        <div class="Value">0% - <?php echo number_format(0, 0, 0, ',')?> bytes</div>                       
+                    </div>
+                    <div class="DetailContainer">
+                        <div class="Key">HDD</div>
+                        <div class="Value">0% - <?php echo number_format(0, 0, 0, ',')?> bytes</div>                                        
+                    </div>                   
+                </div>
+            </div>
+            <div class="Wraper">
+                <div class="SummaryContainer">
+                    <img src="/Framework/Icon/Default/Database001.png">
+                    <div class="Title">DB</div>
+                </div>  
+                <div class="ExpandContainer">
+                    <div class="DetailContainer">
+                        <div class="Key">Query</div>
+                        <div class="Value"> <?php echo number_format(0, 0, 0, ',')?> times</div>                       
+                    </div>
+                    <div class="DetailContainer">
+                        <div class="Key">Volume</div>
+                        <div class="Value"><?php echo number_format(0, 0, 0, ',')?> bytes</div>                                        
+                    </div>                 
+                </div>
+            </div>                       
+        </div>
+    </div>    
+</div>
+
+<script src="/Framework/JavaScript/Report.js" ></script>

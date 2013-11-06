@@ -1,0 +1,35 @@
+{
+    "Setting":
+    {
+        "Name":"Noiloan",
+        "Corporation":"©2012 - 2013 Noiloan",
+        "County":"Viet Nam",
+        "City":"Ha Noi",
+        "Street":"145 - Doi Can",
+        "Phone":"098123456",
+        "Email":"buituananhaof@gmail.com"                
+    },
+    "Version":
+    {
+        "Major":"1",
+        "Minor":"0",
+        "Build":"100",
+        "Revision":"5",
+        "DateCreated":"08/01/2012",
+        "DateModified":"10/20/2013"
+    },
+    "Connections":
+    {
+        "Default":
+        {
+            "Server":"127.0.0.1",
+            "Database":"noiloan",
+            "User":"root",
+            "Password":""
+        }
+    },
+    "Authentication":
+    {
+        "LoginUri":"/User/Login/Control"
+    }
+}

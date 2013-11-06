@@ -1,0 +1,325 @@
+body
+{
+    background: #EBEBEB;
+}
+div.PostArticleContainer 
+{
+    min-height: 620px;
+    color: #333;
+    font-family: Calibri;
+    cursor: default;
+    background: #EBEBEB;
+    /*border: 1px solid #AAA;*/
+}
+div.PostArticleContainer a
+{
+    text-decoration: none;
+    color: #333;
+    cursor: default;
+}
+div.PostArticleContainer input
+{
+    border: none;
+    cursor: default;
+    outline: none;
+}
+div.PostArticleContainer textarea
+{
+    border: none;
+    cursor: default;
+    outline: none;
+}
+div.MasterBarContainer
+{
+    /*height: 30px;*/
+    border-bottom: 1px solid #C9C9C9;    
+}
+div.MasterBarContainer div.DirectorContainer
+{
+    display: inline-block;
+    height: 100%;
+    font-size: 1.2em;    
+    background: #C9C9C9;
+    float: right;
+}
+div.MasterBarContainer div.DirectorContainer div.Adjust
+{
+    padding: 0px 6px 0px 6px;    
+}
+div.MasterBarContainer div.DirectorContainer div.Adjust:hover
+{
+    background: #888;
+    color: #FFF;
+}
+div.MasterBarContainer div.DirectorContainer div.OptionContainer
+{
+    position: absolute;
+    background: #EBEBEB;
+    width: 150px;
+    display: none;
+    border: 1px solid #333;
+    border-radius: 1px;
+    right: 10px;  
+}
+div.MasterBarContainer div.DirectorContainer div.OptionContainer div.Option
+{
+    padding: 3px;
+    font-size: 0.83em;
+}
+div.MasterBarContainer div.DirectorContainer div.OptionContainer div.Option:hover
+{
+    background: #C9C9C9;
+}
+div.MasterBarContainer div.RespondContainer
+{
+    display: inline-block;
+    width: 23px;
+    /*background: red;*/
+    /*float: right;*/
+    text-align: right;
+}
+div.MasterBarContainer div.RespondContainer div.Respond
+{
+    /*display: inline-block;*/
+    /*float: right;*/
+    padding: 3px; 
+    position: absolute;
+}
+div.MasterBarContainer div.RespondContainer div.Respond img
+{
+    max-height: 15px;
+    max-width: 15px;
+    display: none;
+}
+div.TitleContainer
+{    
+    display: inline-block;
+    width: 70%;        
+}
+div.TitleContainer div.Adjust
+{
+    text-align: right;
+}
+div.TitleContainer input
+{
+    min-width: 400px;
+    margin: auto;
+    padding: 3px 24px 3px 24px;
+    background: 0;
+   
+/*    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;*/
+}
+div.ToolBarContainer
+{
+    min-height: 100px;
+    border-bottom: 1px solid #AAA;
+}
+div.ContentContainer
+{
+    min-height: 200px; 
+    width: 100%;
+    text-align: center;
+    /*background: blue;*/
+    float: left;
+    padding: 130px 0px 0px 0px;
+}
+div.ContentContainer div.Adjust
+{
+    width: 100%;
+}
+div.ContentContainer textarea
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    line-height: 17px;        
+    outline: none;
+    width: 70%;
+    height: 400px;
+    resize: none;
+    border: none;
+    border-radius: 1px;
+    border: 1px solid #AAA;
+    padding: 12px 12px 12px 12px;
+    margin: 12px 0px 12px 0px;
+    background: #EBEBEB;
+    vertical-align: top;   
+    display: none;
+}
+div.TabSelectorContainer
+{
+    height: 23px; 
+}
+div.TabSelectorContainer div.TabSelector
+{
+    display: inline-block;
+    font-size: 1em;
+    padding: 0px 3px 0px 3px;
+    margin: 0px 0px 0px 0px; 
+    color: #333; 
+/*    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+    border-left: 1px solid #888;*/
+}
+div.ToolBarContainer div.TabContainer
+{
+    height: 70%;
+    display: none;
+    /*border-top: 1px solid #888;*/
+}
+div.ToolBarContainer div.TabContainer div.GroupContainer
+{
+    display: inline-block;
+    border-right: 1px solid #C9C9C9;
+    /*background: red;*/
+    padding: 0px 0px 0px 0px;
+    min-height: 100%;
+    min-width: 100px;
+}
+div.ToolBarContainer div.TabContainer div.GroupContainer div.CmdContainer
+{   
+    /*background: blue;*/
+    min-height: 60px;
+    padding: 1.5px 3px 1.5px 3px;
+}
+div.ToolBarContainer div.TabContainer div.GroupContainer div.TitleGroupContainer
+{
+    padding: 2px;
+    text-align: center;
+    /*background: yellow;*/
+    /*height: 25%;*/
+}
+
+div.ToolBarContainer div.TabContainer div.GroupContainer div.CmdContainer input
+{
+    
+    width: 500px;
+}
+div.ListArticleContainer
+{
+    min-height: 200px;
+    width: 27%;
+    background: #EBEBEB;
+    /*float: right;*/
+    display: none;
+    border-left: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    position: fixed;
+    right: 0px;
+    top: 124px;
+}
+div.ListArticle\.DirectorContainer
+{
+    /*background: blue;*/
+    min-height: 25px;
+    max-height: 25px;
+    border-bottom: 1px solid #888;
+}
+div.ListArticle\.SearchContainer
+{
+    min-height: 25px;
+    min-width: 70%;
+    float: left;
+    padding: 0px 0px 0px 3px;
+    /*background: red;*/
+}
+div.ListArticle\.ConsoleContainer
+{
+    min-height: 25px;
+    min-width: 10%;
+    float: right;
+    
+    /*background: yellow;*/
+}
+div.ConsoleOption
+{
+    max-height: 20px;
+    max-width: 20px;
+    float: right;
+}
+div.ConsoleOption:hover
+{
+    background: #C9C9C9;
+}
+div.ConsoleOption img
+{
+    max-height: 10px;
+    max-width: 10px;    
+    padding: 5px;
+}
+div.ListArticle\.SearchContainer input
+{
+    width: 90%;
+    padding: 1.5px 6px  1.5px 6px;
+    background: 0;
+    border: 1px solid #888;
+}
+div.ListArticle\.RespondContainer
+{
+    float: left;
+    min-height: 25px;
+    /*background: chartreuse;*/
+    
+}
+div.ListArticle\.RespondContainer img
+{
+    position: absolute;
+    max-height: 15px;
+    padding: 5px;
+    /*background: red;*/
+    display: none;
+}
+div.ListArticle\.TitleArticleContainer
+{
+    /*background: #888;*/
+    min-height: 300px;
+}
+div.ListArticle\.TitleArticleContainer div.TitleContainerList
+{        
+    width: 100%;
+    border-bottom: 1px solid #888;
+}
+div.ListArticle\.TitleArticleContainer div.TitleContainerList div.TitleArticle
+{
+    padding: 0px 6px 0px 6px;
+}
+#ContentHtml
+{
+    display: none;
+}
+div.ContentHtml
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    line-height: 17px;        
+    width: 70%;
+    min-height: 400px;
+    resize: none;
+    border: none;
+    border-radius: 1px;
+    border: 1px solid #AAA;
+    padding: 12px 12px 12px 12px;
+    margin: 12px auto 12px auto;
+    background: #EBEBEB;
+    vertical-align: top;       
+    text-align: left;
+    word-wrap: break-word; 
+}
+div.CmdContainer div.Cmd
+{
+    max-height: 20px;
+    max-width: 20px; 
+}
+div.CmdContainer div.Cmd img
+{
+    max-height: 20px;
+    max-width: 20px;
+}
+div.HeadFixed
+{
+    position: fixed;    
+    clear: both;
+    width: 100%;
+    z-index: 1000;
+    background: #EBEBEB;
+}

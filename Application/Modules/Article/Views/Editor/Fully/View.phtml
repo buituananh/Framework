@@ -1,0 +1,212 @@
+<?php 
+$this->RenderCss('/Sources/Article/Css/Editor');
+$this->RenderJs('/Framework/JQuery/2-0-0-min');
+$this->RenderJs('/Framework/JQuery/AutoSize');
+?>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<div class="PostArticleContainer" >
+    <div class="HeadFixed">
+        <div class="MasterBarContainer">              
+            <div class="TitleContainer">
+                <div class="Adjust">
+                    <input type="text" id="Title" placeholder="Type title here..." disabled="disabled" value="Framework article">
+                </div>
+            </div> 
+            <div class="DirectorContainer">
+                <div class="Adjust" id="Article">ARTICLE</div>
+                <div class="OptionContainer" id="OptionContainer">
+                    <div class="Option" id="Option.Info">
+                        Info
+                    </div>                 
+                    <div class="Option" id="Article.New">
+                        New
+                    </div>                
+                    <div class="Option" id="Article.OpenList">
+                        Open
+                    </div>     
+                    <div class="Option" id="Article.Save">
+                        Save
+                    </div>    
+                    <div class="Option" id="Article.SaveAs">
+                        Save as
+                    </div>                   
+                    <div class="Option" id="Article.Share">
+                        Share
+                    </div>   
+                    <div class="Option" id="Article.Close">
+                        Close
+                    </div>     
+                    <div class="Option" id="Article.Export">
+                        Export
+                    </div>                 
+                    <div class="Option" id="Article.Edit">
+                        Edit
+                    </div>    
+                    <div class="Option" id="Article.Delete">
+                        Delete
+                    </div>                
+                    <div class="Option" id="Article.Exit">
+                        Exit
+                    </div>                 
+                </div>
+            </div>
+            <div class="RespondContainer">
+                <div class="Respond">
+                    <img src="/Framework/Gif/Waiting002.gif" id="RespondWaiting">
+                </div>
+                <div class="Respond">
+                    <img src="/Framework/Icon/Standard/Ok.png" id="RespondOk">
+                </div>        
+                <div class="Respond">
+                    <img src="/Framework/Icon/Standard/Error.png" id="RespondError">
+                </div>              
+            </div>         
+        </div>
+        <div class="ToolBarContainer">
+            <div class="TabSelectorContainer">
+                <div class="TabSelector" id="TabSelector.Home">
+                    HOME
+                </div>
+                <div class="TabSelector" id="TabSelector.Insert">
+                    INSERT
+                </div>
+                <div class="TabSelector" id="TabSelector.Design">
+                    DESIGN
+                </div>            
+            </div>
+            <div class="TabContainer" id="TabContainer.Home">
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Font
+                    </div>                 
+                </div>
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Paragraph
+                    </div>                 
+                </div>  
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Style
+                    </div>                 
+                </div>             
+            </div>     
+            <div class="TabContainer" id="TabContainer.Insert">
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Tables
+                    </div>                 
+                </div>
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+                        <div class="Cmd">
+                            <img id="Cmd.Cover" src="/Framework/Icon/Standard/Welcam.png">
+                        </div>
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Illustration
+                    </div>                 
+                </div>  
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Media
+                    </div>                 
+                </div>  
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Link
+                    </div>                 
+                </div>      
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Symbols
+                    </div>                 
+                </div>             
+            </div> 
+            <div class="TabContainer" id="TabContainer.Design">
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Background
+                    </div>                 
+                </div>
+                <div class="GroupContainer">
+                    <div class="CmdContainer">
+
+
+
+                    </div>                     
+                    <div class="TitleGroupContainer">
+                        Themes
+                    </div>                 
+                </div>             
+            </div>         
+        </div>
+    </div>
+    <div class="ContentContainer" id="ContentContainer">
+        <div class="Adjust">
+            <textarea id="Content"></textarea>
+        </div>      
+    </div>    
+    <div class="ListArticleContainer" id="ListArticleContainer">
+        <div>
+            <div class="ListArticle.DirectorContainer">
+                <div class="ListArticle.SearchContainer">
+                    <input id="Search.Article" type="text" >
+                </div>
+                <div class="ListArticle.RespondContainer">
+                    <img src="/Framework/Gif/Waiting002.gif" id="Search.Respond.Waiting">
+                    <img src="/Framework/Icon/Standard/Ok.png" id="Search.Respond.Ok">
+                    <img src="/Framework/Icon/Standard/Error.png" id="Search.Respond.Error">
+                </div>
+                <div class="ListArticle.ConsoleContainer">
+                    <div class="ConsoleOption" id="ConsoleOption.Close">
+                        <img src="/Framework/Icon/Standard/Delete.png">
+                    </div>
+                    <div class="ConsoleOption" id="ConsoleOption.Refresh">
+                        <img src="/Framework/Icon/Standard/Refresh.png">
+                    </div>                    
+                </div>
+            </div>
+            <div class="ListArticle.TitleArticleContainer" id="ListArticle.TitleArticleContainer">       
+            </div>        
+        </div>
+    </div> 
+</div>
+<?php
+$this->RenderJs('/Sources/Article/Js/Editor');

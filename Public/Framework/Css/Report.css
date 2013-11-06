@@ -1,0 +1,226 @@
+div.ReportContainer
+{
+    min-height: 200px;
+    background: #EBEBEB;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    cursor: default;
+    font-family: Calibri; 
+    margin: 12px 0px 0px 0px;
+}
+div.TitleReport
+{
+    font-size: 1.3em;
+    border-bottom: 1px solid #888;
+    background: #C9C9C9;
+}
+
+button.Button
+{
+    padding: 6px;
+    background: #C9C9C9;
+}
+div.Wraper
+{
+    /*border: 1px #888 solid;*/
+    margin: 3px 0px 0px 12px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 14px;  
+    line-height: 14px;    
+    clear: both;
+}
+div.SummaryContainer
+{
+    background: #C9C9C9;
+    height: 25px;
+}
+div.SummaryContainer:hover
+{
+    outline: 2px #888 solid;    
+}
+div.SummaryContainer img 
+{
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    max-width: 20px;  
+    padding: 2.5px;
+    float: left;
+}
+div.SummaryContainer div.Title 
+{
+    float: left;
+    margin: 5.5px;
+}
+div.ExpandContainer
+{
+    display: none;
+    clear: both;
+}
+div.DetailContainer
+{
+    margin: 1.5px 0px 0px 12px;
+    padding: 1.5px;
+    word-wrap: break-word;
+    clear: both;
+}
+div.DetailContainer:hover
+{
+    outline: 1px #888 solid;    
+}
+div.Property
+{
+    display: inline-block;
+    padding: 0px 6px 0px 0px;
+}
+/*Input selector*/
+div.Input\.Select
+{
+    display: inline-block;
+}
+div.Input\.Select\.Expand
+{
+    background: #EBEBEB;
+    /*height: 100px;*/
+    width: 150px;
+    position: absolute;
+    border: 1px solid #888;
+    padding: 0px 0px 3px 0px;
+    display: none;
+}
+img.Input\.Select\.Expand\.Respond
+{
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    max-width: 20px;  
+    padding: 5px;
+    position: absolute;   
+    top: 100px;
+    left: 50px;
+    display: none;
+    background: #EBEBEB;
+    border-radius: 30px;
+    border: 1px solid #888;
+}
+div.Input\.Select\.Expand\.Value
+{
+    padding: 1.5px 3px 1.5px 3px;
+}
+div.Input\.Select\.Expand div.OptionContainer
+{
+    padding: 3px;
+}
+div.Input\.Select\.Expand div.OptionContainer div.Input\.Select\.Option
+{
+    float: left;
+    padding: 3px;    
+}
+div.Input\.Select\.Expand div.OptionContainer div.Input\.Select\.Option:hover
+{
+    outline: 1px solid #888;    
+}
+div.Input\.Select\.Expand div.Value:hover
+{
+    background: #C9C9C9;
+}
+div.Input\.Select\.CurrentValue
+{
+    
+}
+div.Input\.Select\.CurrentValue:hover
+{
+    outline: 1px solid #888;
+}
+/*Input writer*/
+div.Input\.Write
+{
+    display: inline-block;
+}
+div.Input\.Write\.Expand
+{
+    background: #EBEBEB;
+    /*height: 100px;*/
+    width: 150px;
+    position: absolute;
+    border: 1px solid #888;
+    padding: 0px 0px 3px 0px;
+    display: none;
+}
+img.Input\.Write\.Expand\.Respond
+{
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    max-width: 20px;  
+    padding: 5px;
+    position: absolute;   
+    top: 100px;
+    left: 50px;
+    display: none;
+    background: #EBEBEB;
+    border-radius: 30px;
+    border: 1px solid #888;
+}
+div.Input\.Write\.Expand\.Value
+{
+    padding: 1.5px 3px 1.5px 3px;
+}
+div.Input\.Write\.Expand div.OptionContainer
+{
+    padding: 3px;
+}
+div.Input\.Write\.Expand div.OptionContainer div.Input\.Write\.Option
+{
+    float: left;
+    padding: 3px;    
+}
+div.Input\.Write\.Expand div.OptionContainer div.Input\.Write\.Option:hover
+{
+    outline: 1px solid #888;    
+}
+div.Input\.Write\.Expand div.Value:hover
+{
+    background: #C9C9C9;
+}
+div.Input\.Write\.CurrentValue
+{
+    
+}
+div.Input\.Write\.CurrentValue:hover
+{
+    outline: 1px solid #888;
+}
+input.Input\.Write\.Input
+{
+    width: 90%;
+    background: 0;
+    clear: both;
+    border: 1px solid #888;
+    margin: 3px 0px 3px 3px;
+    padding: 3px;
+    outline: none;
+}
+
+div.DetailContainer div.Key
+{
+    width: 20%;
+    float: left;
+    display: inline-block;
+    padding: 0px 6px 0px 0px;
+    word-wrap: break-word;
+}
+div.DetailContainer div.Value
+{
+    width: 75%;
+    /*float: left;*/
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+td.Width500
+{
+    max-width: 300px;
+    background: red;
+    word-wrap: break-word;
+}

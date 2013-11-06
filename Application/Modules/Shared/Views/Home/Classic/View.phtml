@@ -1,0 +1,86 @@
+<?php
+    $this->RenderCss('/Sources/Shared/Css/Center');
+    $this->RenderCss('/Sources/Shared/Css/WindowVirtual');
+    $this->RenderCss('/Sources/Shared/Css/ButtonStart');
+    $this->RenderCss('/Sources/Shared/Css/Footer');
+?>
+<div class="DirectorContainer">
+    <div class="ButtonStartContainer">  
+        <div class="StartIconContainer">
+            <img src="/Sources/Shared/Img/Logo.ico" id="ButtonStart">
+        </div>
+        <div class="MenuContainer" id="MenuContainer">
+            <div class="StartOptionContainer">
+                <a href="/Article" target="_blank"><div>Article</div></a>
+            </div>
+            <div class="StartOptionContainer">
+                <a href="/Product" target="_blank"><div>Product</div></a>
+            </div>
+            <div class="StartOptionContainer">
+                <a href="/Project" target="_blank"><div>Project</div></a>
+            </div>        
+            <div class="StartOptionContainer">
+                <a href="/Support" target="_blank"><div>Support</div></a>
+            </div>  
+            <div class="StartOptionContainer">
+                <a href="/Community" target="_blank"><div>Community</div></a>
+            </div>                            
+            <div class="StartOptionContainer" id="Login">
+                <div id="UserName">User</div>
+            </div>     
+            <div class="StartOptionContainer">
+                <a href="/Manage" target="_blank"><div>Manage</div></a>
+            </div>                        
+            <div class="StartOptionContainer">
+                <a href="/"><div>Home</div></a>
+            </div>        
+        </div>
+    </div>
+    <?php $this->RenderJs('/Sources/Shared/Js/ButtonStart')?>    
+    <?php $this->RenderJs('/Sources/Shared/Js/WindowVirtual')?>
+</div>
+
+<div class="ContentContainer">
+    <asp:Holder id="Content">
+</div>
+
+<div class="Foot">
+    <!--Logo and site name-->
+    <div class="SiteLogo">
+        <div class="Logo">
+            <!--Logo-->
+            <div class="Img">
+                <img src="/Sources/Shared/Img/LogoBw.png" >
+            </div>
+            <!--Site name-->
+            <div class="SiteName">
+                <div class="Name">
+                    <?php echo $this->AppSetting->Corporation?>
+                </div>
+            </div>            
+        </div>
+    </div>   
+    <!--Some responds from site-->
+    <div class="SiteRespond">
+        <?php echo '<br> Memory usage: '.number_format(memory_get_usage(TRUE), 0, 0, ' ').' bytes'?>
+    </div>
+    <!--Site info--> 
+    <div class="SiteInfo">
+        <!--Site way--> 
+        <div class="SiteWay">
+            <div class="WayShort">
+                OSC
+            </div>
+            <div class="Img">                
+                <img src="/Framework/Icon/Default/ThePirateBay.png" >
+                <img src="/Framework/Icon/Default/Linux001.png" >
+                <img src="/Framework/Icon/Default/Apache001.png" >
+            </div>              
+        </div> 
+        <!--Info develop site--> 
+        <div class="Info">
+            Build on <?php echo System\About::Name.' '.\System\About::GetVersion()->GetString()?><br>
+            Site version <?php echo $this->AppVersion->GetString()?> modified in <?php echo $this->AppVersion->Get('DateModified')?>
+        </div>     
+    </div>
+</div>

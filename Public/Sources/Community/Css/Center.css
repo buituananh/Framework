@@ -1,0 +1,238 @@
+body 
+{
+    background: #EBEBEB;
+    margin: auto;
+    cursor: default;
+    color: #333;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;    
+}
+    body img {
+        border: none;
+    }
+    body a {
+        text-decoration: none;
+        color: #333;
+        cursor: default;
+    }
+    body button {
+        border: 1px solid #888;
+        cursor: default;
+    }
+    body input {
+        border: none;
+        outline: none;   
+    }
+div.Header {
+    min-height: 200px;
+    max-height: 200px;    
+    clear: both;
+    margin: 0px 100px 0px 100px;
+}
+    div.Header div.Left {
+        float: left;
+        height: 200px;
+        min-width: 50%;
+    }
+    div.Header div.Left img {
+        min-height: 150px;
+        max-height: 150px;
+        min-width: 300px;
+        max-width: 600px;
+        margin: 24px;
+    }
+    div.Header div.Right {
+        float: right;
+        height: 200px;
+        min-width: 50%;
+    }
+    div.Header div.Right div.DirectorContainer{
+        float: right;
+        border-left: 1px solid #888;
+        border-right: 1px solid #888;
+        border-bottom: 1px solid #888;
+        text-align: right;
+    }
+        div.Header div.Right div.DirectorContainer div.UserContainer {
+            float: right;            
+        }
+            div.Header div.Right div.DirectorContainer div.UserContainer div.UserName {
+                float: right;    
+                font-size: 18px;  
+                margin: 5px 0px 0px 5px;                          
+            }
+            div.Header div.Right div.DirectorContainer div.UserContainer div.Avatar {
+                float: right;
+            }
+                div.Header div.Right div.DirectorContainer div.UserContainer div.Avatar img{
+                    min-height: 20px;
+                    max-height: 20px;
+                    min-width: 20px;
+                    max-width: 20px;
+                    padding: 5px;    
+                    float: left;                
+                }
+        div.Header div.Right div.DirectorContainer button.Service {
+            float: right;
+            border: none;
+            background: 0;
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+            padding: 5px;
+        }
+            div.Header div.Right div.DirectorContainer button.Service:hover {
+                background: #C9C9C9;
+                color: #fff;
+            }
+    div.Header div.Right div.SearchContainer{
+        clear: both;
+        float: right;
+        border: 1px solid #888;
+        margin: 50px 0px 0px 0px;
+    }
+        div.Header div.Right div.SearchContainer div.InputContainer {
+            clear: both;
+            height: 30px;
+            /*width: 400px;*/
+        }
+            div.Header div.Right div.SearchContainer div.InputContainer div.InputIcon {                
+                height: 30px;
+                width: 30px;
+                /*margin: 0px 0px 0px 300px;*/
+                float: right;
+            }
+            div.Header div.Right div.SearchContainer div.InputContainer div.InputIcon img {
+                max-height: 20px;
+                max-width: 20px;
+                min-height: 20px;
+                min-width: 20px;
+                padding: 5px;
+            }
+            div.Header div.Right div.SearchContainer div.InputContainer div.Input {
+                float: right;
+            }
+                div.Header div.Right div.SearchContainer div.InputContainer div.Input input {
+                    width: 300px;
+                    height: 30px;
+                    padding: 0px 6px 0px 6px;
+                    background: 0;
+                }
+div.Content {
+    clear: both;
+    min-height: 500px;
+    background: 0;
+    border-top: 1px solid #888;
+}
+div.Footer {
+    clear: both;
+    min-height: 100px;
+    max-height: 100px;
+    border-top: 1px solid #888;    
+}
+    div.Footer div.Adjust {
+        margin: auto;
+        width: 1000px;
+    }
+div.Footer div.LinkList{
+    width: 250px;
+    min-height: 100px;
+    float: left;
+    padding: 12px 0px 12px 0px;
+    font-family: Calibri;    
+}
+    div.Footer div.LinkList img {
+        min-height: 15px;
+        min-width: 15px;
+        max-height: 15px;
+        max-width: 15px;
+        padding: 5px 5px 5px 0px;
+        float: left;
+    }
+    div.Footer div.LinkList div.LinkListWraper {
+        border-top: 1px solid #888;
+        margin: 6px auto auto auto;
+        clear: both;
+        padding: 6px 0px 0px 0px;
+    }
+    div.Footer div.LinkList a {
+        text-decoration: none;
+        color: #333;   
+        margin: 4px 0px 0px 6px;
+        float: left;    
+        font-size: 14px;           
+    }
+    div.Footer div.LinkList div.LinkListWraper a {
+        clear: both;
+        display: block;
+        text-decoration: none;
+        color: #333;
+        margin: 3px auto auto auto;    
+        font-size: 12px;    
+    }
+    div.Footer div.LinkList a:hover {
+        color: #888;
+    }
+div.CommunityContainer
+{
+    clear: both;
+    margin: 12px auto auto auto;
+}
+table.Communities
+{
+    clear: both;
+    min-height: 100px;
+    max-height: 100px;
+    margin: 3px;
+    border-bottom: 1px solid #888;
+    width: 1000px;
+    margin: 12px auto 12px auto;
+    border-collapse: collapse;
+}
+    table.Communities tr th
+    {
+        /*background: #888;*/
+        border-bottom: 1px solid #888;
+        text-align: left;
+        padding: 0px 0px 3px 3px;
+    }    
+    tr.Community td
+    {
+        padding: 3px;
+    }
+    tr.Community td.Cover
+    {
+
+    }
+    tr.Community td.Cover img
+    {
+        min-height: 50px;
+        max-height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+    }    
+    tr.Community  td.Name
+    {
+        width: 250px;
+        font-weight: bold;
+        padding: 0px 0px 0px 12px;
+    }
+    tr.Community  td.Type
+    {
+        width: 150px;
+    }
+    tr.Community td.LastActive
+    {
+        width: 400px;     
+        padding: auto 12px auto auto;
+    }
+    tr.Community td.LastActive div
+    {
+        min-height: 100px;
+        max-height: 100px;
+        overflow: hidden;           
+    }
+    tr.Community  td.NumberMember
+    {
+        width: 150px;
+    }

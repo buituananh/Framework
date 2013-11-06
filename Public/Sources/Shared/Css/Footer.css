@@ -1,0 +1,100 @@
+div.Foot
+{
+    width: 100%;
+    height: 50px;
+    font-family: 'Calibri Light';
+    color: #111;
+    border-top: 1px solid #888;    
+    font-size: 0.83em;
+    padding: 3px 0px 3px 0px;     
+    clear: both;
+}
+/*Site logo and site name*/
+div.Foot div.SiteLogo
+{
+    width: 30%;
+    height: inherit;
+    float: left; 
+    position: relative;
+    margin: 0px 0px 0px 3px;
+}
+div.Foot div.SiteLogo div.Logo
+{
+    position: relative;
+    top: 60%;
+    height: 20px;   
+}
+div.Foot div.SiteLogo div.Logo div.Img
+{
+    height: inherit;
+    float: left; 
+}
+div.Foot div.SiteLogo div.Logo div.Img img
+{
+    width: 20px;
+    height: 20px;    
+    border: none;
+    border-radius: 1px;
+}
+div.Foot div.SiteLogo div.Logo div.SiteName
+{    
+    height: inherit;    
+}
+div.Foot div.SiteLogo div.Logo div.SiteName div.Name
+{    
+    position: relative;
+    top: 25%; 
+    left: 3px;
+}
+/*Some respond from site*/
+div.Foot div.SiteRespond
+{
+    width: 39%;
+    height: inherit;
+    float: left;
+    text-align: center;    
+    position: relative;
+}
+div.Foot div.SiteRespond div.Respond
+{    
+    position: relative;
+    top: 40%;
+}
+div.Foot div.SiteRespond div.Timer 
+{
+    position: relative;
+    top: 40%;
+}
+/*Site info*/
+div.Foot div.SiteInfo
+{
+    width: 30%;
+    height: inherit;
+    float: right;
+    margin: 0px 3px 0px 0px;
+}
+div.Foot div.SiteInfo div.SiteWay
+{
+    height: 40%;
+}
+div.Foot div.SiteInfo div.SiteWay div.Img
+{
+    float: right;      
+}
+div.Foot div.SiteInfo div.SiteWay div.Img img
+{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0px 6px 0px 0px;
+}
+div.Foot div.SiteInfo div.SiteWay div.WayShort
+{
+    float: right;
+}
+div.Foot div.SiteInfo div.Info
+{
+    height: 60%;
+    text-align: right;   
+    clear: both;     
+}

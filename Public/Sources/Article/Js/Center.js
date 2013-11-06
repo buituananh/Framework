@@ -1,0 +1,10 @@
+$('#Get').click(function(){
+   $.post(
+    '/Article/Center/TryJson',
+    {},
+    function(JsonObj)
+    {
+        alert(JsonObj.x);
+    }
+    ); 
+});

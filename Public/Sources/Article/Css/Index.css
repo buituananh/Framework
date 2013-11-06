@@ -1,0 +1,216 @@
+body
+{
+    cursor: default;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+div.ArticleGroup
+{
+    display: inline-block;
+    color: #FFF;
+}
+div.BestArticle
+{
+    float: left;
+    width: 55%;
+    /*min-height: 1000px;*/
+    /*background: #999;*/
+    /*border: 1px solid #888;*/
+}
+div.ListTitle
+{
+    background: #888;   
+    font-weight: bold;
+    padding: 6px;
+    color: #EEE;
+}
+div.ArticleContainer
+{
+    padding: 3px 6px 3px 6px;
+    /*border-bottom: 1px solid #AAA;*/
+    min-height: 162px;
+    max-height: 162px;
+    overflow: hidden;
+}
+div.ArticleTitle
+{
+    font-weight: bold;  
+    margin: 0px 0px 6px 0px;
+}
+div.ArticleContent
+{
+    overflow: hidden;
+}
+div.ClassArticle
+{
+    float: right;
+}
+div.ArticleTitleChose
+{
+    font-weight: bold;  
+    margin: 0px 0px 0px 0px;  
+    background: #CCC;
+    color: #333;
+    padding: 3px;
+    border-bottom: 1px solid #888;
+    padding: 3px;
+}
+div.ArticleTitleChose:hover
+{
+    background: #AAA;
+}
+div.ArticleSummaryContainer
+{
+    
+}
+div.ArticleContentChose
+{
+    display: none;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 3px;
+    word-wrap: break-word;
+    overflow: hidden;
+    clear: both;
+}
+div.ArticleChoseContainer
+{
+    border: 1px solid #BBB;
+    margin: 0px 0px 0px 0px;
+    min-width: 500px;
+    max-width: 500px;    
+}
+div.ArticleListTitile
+{
+    padding: 6px 6px 6px 6px;
+    font-weight: bold;
+    background: #888;
+}
+div.WideCoverArticle
+{
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 267px;
+    max-width: 267px;
+    border: 1px solid #888;
+    float: left;
+}
+div.WideCoverArticle img
+{
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 267px;
+    max-width: 267px;
+}
+div.LeftContent
+{
+    float: left;
+    
+}
+div.RightContent
+{
+    float: left;
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 453px;    
+    max-width: 453px;    
+    margin: 0px 0px 0px 6px;
+    overflow: hidden;
+}
+div.Content
+{
+    margin: 12px auto auto auto;
+}
+div.MiniLeftContent
+{
+    float: left;
+    width: 393px;
+    
+}
+div.MiniRightContent
+{
+    float: left;
+    width: 100px;
+}
+div.MiniRightContent img
+{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;     
+}
+div.DirectorContainer
+{
+    min-height: 75px;
+    max-height: 75px;
+    border-bottom: 1px solid #888;
+}
+div.HeadLeft
+{
+    float: left;
+}
+div.HeadRight
+{
+    float: right;
+}
+div.SupportActionContainer
+{    
+    display: inline-block;
+    margin: 12px 0px 0px 12px;
+}
+button.SupportAction
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #888;
+}
+button.SupportAction:hover
+{
+    background: #AAA;
+}
+div.SearchContainer{     
+     display: inline-block;
+     border: 1px solid #888;
+     margin: 15px 12px 0px 0px;          
+ }
+     div.SearchContainer div.InputContainer {
+         clear: both;
+         height: 30px;
+         /*width: 400px;*/
+     }
+         div.SearchContainer div.InputContainer div.InputIcon {                
+             height: 30px;
+             width: 30px;
+             /*margin: 0px 0px 0px 300px;*/
+             float: right;
+         }
+         div.SearchContainer div.InputContainer div.InputIcon img {
+             max-height: 20px;
+             max-width: 20px;
+             min-height: 20px;
+             min-width: 20px;
+             padding: 5px;
+         }
+         div.SearchContainer div.InputContainer div.Input {
+             float: right;
+         }
+             div.SearchContainer div.InputContainer div.Input input {
+                 width: 300px;
+                 height: 30px;
+                 padding: 0px 6px 0px 6px;
+                 background: 0;
+             }
+div.Active
+{
+    background: #888;
+    color: #EEE;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 3px 3px 3px 6px;
+}             
+div.Content
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;    
+}

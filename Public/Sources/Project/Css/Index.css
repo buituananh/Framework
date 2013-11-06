@@ -1,0 +1,150 @@
+body
+{
+    cursor: default;
+    margin: auto;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;    
+}
+div.Wraper
+{
+    margin: 6px auto auto auto;
+    width: 1221px;
+    overflow: hidden;
+    border-right: 1px solid #888;
+}
+div.ProjectTree
+{
+    min-height: 1000px;
+    max-height: 1000px;
+    min-width: 406px;
+    max-width: 406px;
+    float: left;    
+    border-left: 1px solid #888;
+}
+div.ProjectContainer
+{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 400px;
+    max-width: 400px;    
+    overflow: hidden;    
+    padding: 6px 3px 6px 3px;    
+}
+div.ProjectContainer:hover
+{
+    background: #C9C9C9;
+}
+div.ProjectContainer:hover img
+{
+    -webkit-filter: brightness(150%);
+}
+div.ProjectContainer img
+{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;   
+    /*padding: 25px 0px 25px 0px;*/
+    float: left;
+}
+div.StateName
+{
+    background: #ABABAB;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+}
+div.LeftContent
+{
+    float: left;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;     
+}
+div.RightContent
+{
+    float: left;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 290px;
+    max-width: 290px;   
+    padding: 0px 0px 0px 10px;    
+}
+div.ProjectName
+{
+    font-weight: bold;
+}
+div.ProjectSummary
+{
+    margin: 3px 0px 0px 0px;
+}
+div.DirectorContainer
+{
+    min-height: 75px;
+    max-height: 75px;
+    border-bottom: 1px solid #888;
+}
+div.HeadLeft
+{
+    float: left;
+}
+div.HeadRight
+{
+    float: right;
+}
+div.SupportActionContainer
+{    
+    display: inline-block;
+    margin: 12px 0px 0px 12px;
+}
+button.SupportAction
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #888;
+}
+button.SupportAction:hover
+{
+    background: #AAA;
+}
+div.SearchContainer{     
+     display: inline-block;
+     border: 1px solid #888;
+     margin: 15px 12px 0px 0px;          
+ }
+     div.SearchContainer div.InputContainer {
+         clear: both;
+         height: 30px;
+         /*width: 400px;*/
+     }
+         div.SearchContainer div.InputContainer div.InputIcon {                
+             height: 30px;
+             width: 30px;
+             /*margin: 0px 0px 0px 300px;*/
+             float: right;
+         }
+         div.SearchContainer div.InputContainer div.InputIcon img {
+             max-height: 20px;
+             max-width: 20px;
+             min-height: 20px;
+             min-width: 20px;
+             padding: 5px;
+         }
+         div.SearchContainer div.InputContainer div.Input {
+             float: right;
+         }
+             div.SearchContainer div.InputContainer div.Input input {
+                 width: 300px;
+                 height: 30px;
+                 padding: 0px 6px 0px 6px;
+                 background: 0;
+             }
+div.Active
+{
+    background: #888;
+    color: #EEE;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 3px 3px 3px 6px;
+}             

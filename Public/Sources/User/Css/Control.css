@@ -1,0 +1,186 @@
+body
+{
+    background: #EEE;
+}
+div.Panel
+{
+    border: 1px solid #333;
+    min-height: 500px;
+    width: 500px;
+    margin: auto auto auto auto;
+    font-family: Calibri;
+    color: #222;
+    cursor: default;
+    padding: 6px;
+    cursor: default;
+    background: #EBEBEB;
+}
+div.Panel a
+{
+    cursor: default;    
+}
+div.Panel img
+{
+    border: none;
+}
+div.Panel div.StackContainer
+{
+    min-height: 25px;
+    margin-bottom: 3px;
+}
+div.Panel div.StackContainer div.AvatarContainer
+{
+    max-width: 75px;
+    min-height: 75px;
+    margin: auto;    
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 3px;
+}
+div.Panel div.StackContainer div.AvatarContainer img
+{
+    max-width: 75px;
+    border: none;
+    border-radius: 2px;
+    float: left;
+}
+div.Panel div.StackContainer div.AccountContainer
+{
+    width: 140px;
+    margin: auto;
+    text-align: center;    
+    font-weight: bold;       
+}
+div.Panel div.StackContainer div.InputContainer
+{
+    height: 30px;
+    width: 300px;
+    padding: 3px 3px 3px 3px;
+    margin: auto;    
+    clear: both;   
+    border-radius: 2px;
+}
+div.Panel div.StackContainer div.InputContainer div.InpuIcon
+{
+    height: 30px;
+    width: 30px;
+    margin: 1px auto auto auto;
+    position: absolute; 
+    padding: 1px 0px 0px 3px;
+}
+div.Panel div.StackContainer div.InputContainer div.Input
+{    
+    position: absolute;
+}
+div.Panel div.StackContainer div.InputContainer div.InpuIcon img
+{
+    min-height: 15px;
+    max-height: 15px;    
+    margin: 9px 0px 0px 3px;
+}
+div.Panel div.StackContainer div.InputContainer div.Input input
+{
+    width: 260px;
+    font-size: 1em;
+    padding: 6px 6px 6px 40px;
+    border: 1px solid #333;    
+    cursor: default;
+    background: 0;    
+    outline: none;
+}
+div.CaptchaImg
+{
+    height: 76px;
+    width: 163px;
+    margin: 12px auto auto auto; 
+}
+div.CaptchaImg img
+{
+    min-height: 50px;
+    max-width: 300px;
+    margin: auto auto auto auto;
+}
+#CaptchaImgContainer
+{
+    display: none; 
+}
+table.Menu
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 1em;
+    text-align: left;
+    border-collapse: collapse;
+    cursor: default;
+    border: 1px solid #111;
+    margin: 20px auto auto auto;
+}
+table.Menu td
+{
+    padding: 3px 24px 0px 24px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+}
+table.Menu td img
+{
+    max-height: 25px;
+}
+table.Menu td:hover
+{
+    background: #C9C9C9;
+}
+div.Processing
+{
+    min-height: 50px;
+    width: 400px;
+    margin: auto;    
+}
+div.Processing ul
+{
+    list-style: none;
+    text-align: left;
+    font-style: oblique;
+}
+div.Processing ul li.Error
+{
+    color: peru;
+}
+div.Processing ul li.Success
+{
+    color: darkgreen;
+}
+#UserNameContainer
+{
+    display: none;
+}
+#EmailContainer
+{
+    display: none;
+}
+#CaptchaContainer
+{
+    display: none;
+}
+#ProcessingContainer
+{
+    display: none;
+}
+#LoginUi
+{
+    display: none;
+}
+#Registry
+{
+    display: none;
+}
+#Logout
+{
+    display: none;
+}
+#Setting
+{
+    display: none;
+}
+#GetPassword
+{
+    display: none;
+}

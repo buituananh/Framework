@@ -1,0 +1,62 @@
+div.ButtonStartContainer
+{
+   /*background: red;*/
+   position: absolute;
+   min-height: 50px;
+   max-height: 50px;
+   min-width: 50px;
+   max-width: 50px;
+   margin: 6px 0px 0px 6px;
+   cursor: default;
+   color: #333;
+   font-family: Calibri;
+   z-index: 5000;
+}
+div.ButtonStartContainer a
+{
+    color: #333;
+    text-decoration: none;
+    cursor: default;
+}
+div.StartIconContainer
+{
+/*    background: blue;*/
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    max-width: 50px;    
+    padding: 0px 0px 6px 0px;
+}
+div.StartIconContainer img
+{
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    max-width: 30px;    
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    background: #EBEBEB;
+}
+div.StartIconContainer img:hover
+{
+    background: #C9C9C9;
+}
+div.MenuContainer
+{
+    position: absolute;
+    min-height: 50px;
+    min-width: 100px;
+    background: #EBEBEB;
+    border: 1px solid #888;
+    border-radius: 1px;
+    display: none;
+}
+div.StartOptionContainer
+{
+    padding: 3px 6px 3px 6px;   
+}
+div.StartOptionContainer:hover
+{
+    background: #C9C9C9;
+}

@@ -1,0 +1,111 @@
+body
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;    
+}
+div.ProductContainer
+{
+    min-height: 120px;
+    max-height: 120px;
+    min-width: 100px;
+    max-width: 100px;
+    /*background: #ABABAB;*/
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 1px;
+    margin: 3px;
+    border: 1px solid #888;
+}
+div.ProductContainer:hover img
+{
+    -webkit-filter: brightness(150%);
+}
+div.ProductContainer img
+{
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    margin: 3px 0px 0px 0px;
+}
+div.ProductName
+{  
+    margin: 6px auto auto auto;
+}
+div.ProductList
+{
+    background: 0;
+    min-width: 880px;
+    max-width: 880px;
+    margin: 6px auto auto auto;
+}
+div.DirectorContainer
+{
+    min-height: 75px;
+    max-height: 75px;
+    border-bottom: 1px solid #888;
+}
+div.HeadLeft
+{
+    float: left;
+}
+div.HeadRight
+{
+    float: right;
+}
+div.SupportActionContainer
+{    
+    display: inline-block;
+    margin: 12px 0px 0px 12px;
+}
+button.SupportAction
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #888;
+}
+button.SupportAction:hover
+{
+    background: #AAA;
+}
+div.SearchContainer{     
+     display: inline-block;
+     border: 1px solid #888;
+     margin: 15px 12px 0px 0px;          
+ }
+     div.SearchContainer div.InputContainer {
+         clear: both;
+         height: 30px;
+         /*width: 400px;*/
+     }
+         div.SearchContainer div.InputContainer div.InputIcon {                
+             height: 30px;
+             width: 30px;
+             /*margin: 0px 0px 0px 300px;*/
+             float: right;
+         }
+         div.SearchContainer div.InputContainer div.InputIcon img {
+             max-height: 20px;
+             max-width: 20px;
+             min-height: 20px;
+             min-width: 20px;
+             padding: 5px;
+         }
+         div.SearchContainer div.InputContainer div.Input {
+             float: right;
+         }
+             div.SearchContainer div.InputContainer div.Input input {
+                 width: 300px;
+                 height: 30px;
+                 padding: 0px 6px 0px 6px;
+                 background: 0;
+             }
+div.Active
+{
+    background: #888;
+    color: #EEE;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 3px 3px 3px 6px;
+}             

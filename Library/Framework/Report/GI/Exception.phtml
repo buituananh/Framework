@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<link rel='stylesheet' type='text/css' href="<?php echo \System\Environment::GetSourcesPath().'/Css/Standard.css' ?>" >
+<link rel='stylesheet' type='text/css' href="<?php echo \System\Environment::GetSourcesPath().'/Css/Handle.css' ?>" >
+<link rel='stylesheet' type='text/css' href="<?php echo \System\Environment::GetSourcesPath().'/Css/TableStandard.css' ?>" >
+
+<div class="RespondContainer">
+    <div class="RespondWhere">
+        [Application respond]
+    </div>
+    <div class="Respond">
+        <table class="Standard">
+            <?php echo $this->GetTrace($this->Exception->getTrace())?>            
+        </table>
+    </div>
+</div>
+

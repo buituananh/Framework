@@ -1,0 +1,24 @@
+body
+{      
+    background: #EBEBEB;
+    margin: auto auto auto auto;  
+    cursor: default;
+}
+div.DirectorContainer
+{
+    width: 100%;
+    height: 25px;
+}
+div.ContentContainer
+{
+    position: static;
+    display: block;
+    width: 100%;
+    min-height: 650px; 
+}
+div.FooterContainer
+{
+    width: 100%;
+    height: 50px;
+    clear: both;
+}

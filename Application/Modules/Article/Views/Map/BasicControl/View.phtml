@@ -1,0 +1,50 @@
+<?php
+$this->RenderCss('/Sources/Shared/Css/ObjectExplorer');
+$this->RenderCss('/Sources/Article/Css/MapControl');
+?>
+<table class="ObjectExplorer">
+    <tr>
+        <th>
+            Icon
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Last article
+        </th>
+        <th>
+            Viewing
+        </th>         
+        <th>
+            Articles
+        </th>  
+        <th>
+            Viewed
+        </th>         
+    </tr>
+    <?php foreach ($this->ViewBag['ArticleMap'] as $Type) {?>    
+    <tr class="Object">
+        <td class="Icon">
+            <img src="/Sources/Community/Img/Cover/<?php echo $Type['Id']?>.png">
+        </td>
+        <td class="MediumBoldText" id="<?php echo $Type['Id']?>">
+            <?php echo $Type['Name']?>
+        </td>
+        <td class="LongText" id="<?php echo $Type['LastArticleId']?>">
+            <?php echo $Type['ArticleName']?>
+        </td>   
+        <td class="Number">
+            <?php echo $Type['Viewing']?>
+        </td>        
+        <td class="Number">
+            <?php echo $Type['Articles']?>
+        </td>
+        <td class="Number">
+            <?php echo $Type['Viewed']?>
+        </td>        
+    </tr>
+    <?php }?>        
+</table>
+<?php
+$this->RenderJs('/Sources/Article/Js/MapControl');

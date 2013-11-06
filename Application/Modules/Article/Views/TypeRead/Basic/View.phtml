@@ -1,0 +1,50 @@
+<?php 
+$this->RenderCss('/Sources/Article/Css/TypeRead');
+$this->RenderCss('/Sources/Shared/Css/ObjectExplorer');
+?>
+<table class="ObjectExplorer">
+    <tr>
+        <th>
+            Icon
+        </th>
+        <th>
+            Article name
+        </th>
+        <th>
+            Point
+        </th>
+        <th>
+            Comments
+        </th>         
+        <th>
+            Viewing
+        </th>  
+        <th>
+            Views
+        </th>         
+    </tr>
+    <?php foreach ($this->ViewBag['Articles'] as $Article) {?>    
+    <tr class="Object">
+        <td class="Icon">
+            <img src="/Sources/Article/Img/Cover/<?php echo $Article['Id']?>.png">
+        </td>
+        <td class="LongText" id="<?php echo $Article['Id']?>">
+            <?php echo $Article['Name']?>
+        </td>   
+        <td class="Number">
+            <?php echo $Article['Point']?>
+        </td>        
+        <td class="Number">
+            <?php echo $Article['Comments']?>
+        </td>        
+        <td class="Number">
+            <?php echo $Article['Viewing']?>
+        </td>
+        <td class="Number">
+            <?php echo $Article['Views']?>
+        </td>        
+    </tr>
+    <?php }?>        
+</table>
+<?php
+$this->RenderJs('/Sources/Article/Js/TypeRead');

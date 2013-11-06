@@ -1,0 +1,77 @@
+<% Module="/Shared" Controller="Home" View="Classic "%>
+
+<asp:Holder id="Content">
+    <?php 
+    $this->RenderCss('/Sources/Home/Css/Center');
+    $this->RenderJs('/Framework/JQuery/2-0-0-min');    
+    ?>
+    <meta charset="utf-8" >
+    <script type="text/javascript" src="Blizzard%20Entertainment_files/swfobject.js"></script>
+    <div class="NewsContainer">
+        <div class="SlideContainer">
+            <div class="BackgroundContainer">
+                <div class="Adjust">
+               
+                </div>             
+            </div>
+            <div class="ChoseContainer">
+                <div class="Adjust" id="Adjust">
+
+                </div>
+            </div>         
+            <div class="TitleContainer">
+                <div class="Title" id="Title">This is title</div>
+            </div>               
+            <div class="OptionContainer">   
+                <div class="Adjust">
+                    <div class="OptionSocial">
+                        <img id="ContentShow" src="/Framework/Icon/Standard/ConcentricCircles.png" >
+                    </div>                    
+                    <div class="OptionSocial">
+                        <img id="CmtInside" src="/Framework/Icon/Standard/Massage.png" >
+                    </div>                  
+                    <div class="OptionSocial">
+                        <img id="CmtFacebook" src="/Framework/Icon/Facebook.png" >
+                    </div> 
+                    <div class="OptionSocial">
+                        <img id="CmtGoogle" src="/Framework/Icon/Google.png" >
+                    </div>                  
+                    <div class="OptionSocial">
+                        <img id="CmtTwitter" src="/Framework/Icon/Twitter.png" >
+                    </div>    
+                    <div class="WaitingSocailCommentLoad" id="WaitingSocailCommentLoad">
+                        <img src="/Framework/Gif/Waiting002.gif" >
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="NewsDetailContainer">    
+                <div class="DetailLeft">
+                    <div class="ContentDetailContainer">
+                        <div class="CmtSocialContainer" id="CmtInsideContainer"></div>
+                        <div class="CmtSocialContainer" id="CmtFacebookContainer">                    
+                            <div class="fb-comments" migrated="1" data-width="550" data-num-posts="5" data-colorscheme="light" href="http://noiloan.net/" allowTransparency="true" data-order_by="reverse_time"></div>                 
+                        </div>
+                        <div class="CmtSocialContainer" id="CmtGoogleContainer" hidden>      
+                            Not available now because we can not control google+. We will open it late <br>
+                            Try comment to different system as: Inside, Facebook or Twitter <br>
+        <!--                    <script src="https://apis.google.com/js/plusone.js"> 
+                            </script> 
+                            <div class="g-comments" 
+                               data-href = "https://plus.google.com/103101531016374218558" 
+                               data-width = "500" 
+                               data-first_party_property = "BLOGGER" 
+                               data-view_type = "FILTERED_POSTMOD" > 
+                            </div>                    -->
+                        </div>                
+                        <div class="CmtSocialContainer" id="CmtTwitterContainer">
+                            <a class="twitter-timeline" href="https://twitter.com/phamanhaof" data-widget-id="342558416113385472" data-chrome="nofooter transparent noheader noscrollbar" data-tweet-limit="5"></a>                    
+                        </div>
+                        <div class="Content" id="Content"></div>
+                    </div>
+                </div>
+                <div class="DetailRight">
+                </div>     
+            </div>				
+    </div>
+</asp:Holder>

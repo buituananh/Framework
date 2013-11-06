@@ -1,0 +1,190 @@
+div.NewsContainer
+{
+    /*height: 500px;*/ 
+    width: 100%;  
+    margin: -25px auto auto auto;
+    cursor: default;
+    color: #222;
+    font-family: Calibri;
+    /*position: absolute;*/ 
+    /*top: -25px;*/ 
+    
+
+}
+div.NewsContainer img
+{
+    border: none;
+}
+div.NewsContainer a
+{
+    text-decoration: none;
+    color: #222;
+}
+div.NewsContainer div.SlideContainer
+{
+    min-height: 200px;          
+}
+div.NewsContainer div.SlideContainer div.BackgroundContainer
+{
+    min-height: 200px;     
+    text-align: center;
+    /*background: url(/Sources/Home/Img/Head.jpg);*/
+    /*position: absolute;*/
+}
+div.BackgroundContainer div.Adjust
+{
+    clear: both;
+    width: 100%; 
+    /*max-height: 200px;*/
+    margin: auto;
+}
+div.NewsContainer div.SlideContainer div.BackgroundContainer img
+{
+/*    max-height: 200px;
+    min-height: 200px;  */
+    /*float: left;*/
+    width: inherit;
+    max-height: inherit;
+}
+div.TitleContainer
+{
+    clear: both;
+    width: 100%;    
+    /*display: none;*/
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px solid #888;*/    
+    background: blue;
+    margin: -75px auto auto auto;
+    
+}
+div.TitleContainer div.Title
+{
+    font-size: 1.2em;   
+    padding: 3px 12px 3px 12px;   
+    color: #EEE;
+    background: #888; 
+} 
+div.OptionContainer
+{
+    padding: 3px 0px 0px 0px;         
+    min-height: 20px;
+    /*border: 1px solid #333;*/
+    /*background: yellow;*/
+}
+div.OptionContainer div.Adjust
+{    
+    margin: 0px 0px 0px 12px;
+    min-width: 300px;
+    /*padding: 3px 0px 3px 0px;*/
+}
+div.OptionSocial
+{
+    /*float: left;*/ 
+    /*padding: 0px 3px 0px 3px;*/   
+    /*background: blue;*/    
+    display: inline-block;
+}
+div.OptionSocial img
+{
+    max-height: 20px;
+    padding: 5px;    
+    float: left;
+    border-radius: 20px;
+}
+div.OptionSocial img:hover
+{
+    background: #C9C9C9;
+}
+div.NewsContainer div.ChoseContainer
+{
+    height: 100px;  
+    position: absolute;    
+    right: 50px;
+    top: 175px;
+    z-index: 400;
+    /*background: blue;*/
+}
+div.NewsContainer div.ChoseContainer div.Adjust
+{
+    height: 100px;
+    /*width: 500px;*/ 
+    margin: auto;  
+    text-align: center;
+/*    border-left: 1px solid #333;
+    border-right: 1px solid #333;    
+    border-bottom: 1px solid #333; */
+    /*background: yellow;*/
+}
+div.NewsContainer div.ChoseContainer div.Adjust div.Chose
+{
+    height: 100px;
+    width: 75px; 
+    display: inline-block; 
+    /*float: left;*/
+    /*background: blue;*/
+    /*float:left;*/
+}
+div.NewsContainer div.ChoseContainer div.Adjust div.Chose img
+{
+    max-height: 75px; 
+    max-width: 75px;
+    min-height: 75px;
+    min-width: 75px; 
+    margin: 15px 0px 0px 0px;
+    padding: 3px;
+    background:  #EBEBEB;
+    float: left;
+    border: 1px solid #333;    
+    border-radius: 1px;    
+}
+div.NewsContainer div.ChoseContainer div.Adjust div.Chose img:hover
+{
+    /*background: #C9C9C9;*/  
+}
+div.NewsDetailContainer
+{
+    clear: both;
+    margin: 0px auto auto auto;
+    min-height: 600px;
+/*    background: red;*/
+}
+div.NewsDetailContainer div.DetailLeft
+{
+    min-height: 500px;
+    width: 50%;
+    float: left; 
+    /*background: red;*/
+}
+div.NewsDetailContainer div.DetailRight
+{
+    min-height: 500px;
+    width: 45%;
+    float: right;
+    /*background: #222;*/
+    margin: 12px auto auto auto;
+}
+div.NewsDetailContainer div.DetailLeft div.ContentDetailContainer
+{ 
+    margin: 0px 0px 0px 12px;   
+    padding: 12px;
+    /*border: 1px solid #333;*/
+    /*background: red;*/
+}
+div.NewsDetailContainer div.DetailLeft div.ContentDetailContainer span
+{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5em;    
+}
+div.WaitingSocailCommentLoad
+{
+    display: none;
+}
+div.WaitingSocailCommentLoad img
+{
+    max-height: 20px;
+    max-width: 20px;
+    padding: 5px;    
+}
